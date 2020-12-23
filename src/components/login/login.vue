@@ -3,7 +3,9 @@
     <div class="wrap">
       <div class="left">
         <transition name="fade" mode="out-in">
-          <div class="bg"></div>
+          <div class="bg">
+            <img src="../../assets/images/login-image.png" />
+          </div>
         </transition>
       </div>
       <div class="right">
@@ -61,7 +63,7 @@
   }
 
   .wrap {
-    width: 1017px;
+    width: 950px;
     height: 620px;
     align-self: center;
     display: -webkit-box;
@@ -70,21 +72,28 @@
   }
 
   .left {
-    width: 56%;
+    width: 52%;
     height: 100%;
+    background-color: #FFFFFF;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
   }
 
   .left .bg {
     width: 100%;
     height: 100%;
-    background-image: url(../../assets/images/sf.png);
-    background-size: contain;
-    border-top-left-radius: 15px;
-    border-bottom-left-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .left .bg img{
+    margin-left: 100px;
+    z-index: 999;
   }
 
   .right {
-    width: 44%;
+    width: 48%;
     height: 100%;
     background-color: white;
     border-top-right-radius: 15px;
@@ -94,9 +103,9 @@
   .right .title {
     display: block;
     width: 100%;
-    height: 60px;
+    height: 50px;
     text-align: center;
-    margin-top: 80px;
+    margin-top: 100px;
     font-size: 30px;
   }
 
